@@ -1,9 +1,16 @@
 __author__ = 'smail'
 
 
-def give_money(money,request):
+def withdraw(balance, request):
 
-    if request<= money:
+    x = balance - request
+    print("Current balance =" + str(balance))
+    if request > balance:
+        print("Can't give you all this money !!")
+
+    elif request < 0:
+        print("More than zero plz!")
+    else:
         while request > 0:
             if request >= 100:
                 request -= 100
@@ -23,9 +30,14 @@ def give_money(money,request):
             elif request >= 1:
                 request -= 1
                 print("give 1")
-    elif money < request:
-        x = "Can't Give You Money?"
-    
+
+    return x
+
 
 ###################################
-print give_money(1000,277)
+balance = 500
+
+balance = withdraw(balance, 277)
+balance = withdraw(balance, 30)
+balance = withdraw(balance, 5)
+balance = withdraw(balance, 500)
