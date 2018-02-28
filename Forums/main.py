@@ -11,3 +11,5 @@ post3 = models.Post("Third Post", "My Third Post")
 
 
 print member1
+
+print(post1)
