@@ -2,17 +2,18 @@ class MemberStore:
     members = []
     posts = []
     last_id = 1
-    def add_member(self, member):
+
+    def add(self, member):
         member.id = MemberStore.last_id
         MemberStore.members.append(member)
         MemberStore.last_id += 1
 
-    def get_all_member(self):
+    def get_all(self):
         return MemberStore.members
 
     def get_by_id(self, id):
-        all_members = self.get_all_member()
-        result = ''
+        all_members = self.get_all()
+        result = None
         for member in all_members:
             if member.id == id:
                 result = member
@@ -25,10 +26,12 @@ class MemberStore:
             result = True
         return result
 
-    def delete_member(self, id):
+    def delete(self, id):
         set_member = self.get_by_id(id)
-        set_member.remove()
+        MemberStore.members.remove(set_member)
 
+    def update(self, member):
+        self.members
     def add_post(self, post):
         MemberStore.posts.append(post)
 
