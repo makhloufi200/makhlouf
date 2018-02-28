@@ -16,11 +16,11 @@ instance = memberstore.MemberStore()
 add_members(member1,instance)
 add_members(member2,instance)
 
-post1 = models.Post("First Post", "This is My First Post")
+post1 = models.Post("First Post", "This is My First Post", 1)
 
-post2 = models.Post("Hello My Friend", "Hello My Friend, Good Luck")
+post2 = models.Post("Hello My Friend", "Hello My Friend, Good Luck", 2)
 
-post3 = models.Post("Third Post", "My Third Post")
+post3 = models.Post("Third Post", "My Third Post", 3)
 
 instance_post = memberstore.MemberStore()
 add_posts(post1,instance_post)
