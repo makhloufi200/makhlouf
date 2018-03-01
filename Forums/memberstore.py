@@ -1,3 +1,4 @@
+import itertools
 class MemberStore:
     members = []
     posts = []
@@ -24,7 +25,7 @@ class MemberStore:
         all_members = self.get_all()
         for member in all_members:
             if member.name == member_name:
-                return member
+                yield member
 
     def entity_exists(self, member):
         result = False
@@ -45,6 +46,20 @@ class MemberStore:
                 break
         return result
 
+    def get_members_with_posts(self, all_posts):
+            all_members = (self.get_all())
+            all_posts = self.get_all_post()
+            member_with_post = []
+            for member in all_members:
+                for post in all_posts:
+                    if member.id == post.member_id:
+                        member_with_post.append(member)
+            return member_with_post
+
+    def get_top_two(self, post_store):
+        all_members = self.get_members_with_posts(post_store)
+        all_members = sorted(all_members, key=lambda x: len(x.posts), reverse=True)
+        return all_members[:2]
 
     def add_post(self, post):
         MemberStore.posts.append(post)
