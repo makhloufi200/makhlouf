@@ -20,6 +20,12 @@ class MemberStore:
                 break
         return result
 
+    def get_by_name(self, member_name):
+        all_members = self.get_all()
+        for member in all_members:
+            if member.name == member_name:
+                return member
+
     def entity_exists(self, member):
         result = False
         if self.get_by_id(member.id) is not None:
@@ -31,7 +37,15 @@ class MemberStore:
         MemberStore.members.remove(set_member)
 
     def update(self, member):
-        self.members
+        result = None
+        all_members = self.get_all()
+        for i,item in enumerate(all_members):
+            if member.id == item.id:
+                all_members[i] = member
+                break
+        return result
+
+
     def add_post(self, post):
         MemberStore.posts.append(post)
 
