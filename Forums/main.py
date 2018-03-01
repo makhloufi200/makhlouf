@@ -1,5 +1,5 @@
 import models
-import memberstore
+from memberstore import MemberStore,PostStore
 
 
 def create_members():
@@ -26,8 +26,8 @@ def store_should_add_member(members_instances, member_store):
 
 def stores_should_be_similar():
 
-    member_store1 = memberstore.MemberStore()
-    member_store2 = memberstore.MemberStore()
+    member_store1 = MemberStore()
+    member_store2 = MemberStore()
     if member_store1.get_all() is member_store2.get_all():
         print("Same stores elements !")
 
@@ -37,10 +37,7 @@ def print_members_list(members_list):
 
 def print_all_members(member_store):
     print("=" * 30)
-
-    for member in member_store.get_all():
-        print(member)
-
+    print_members_list(member_store.get_all())
     print("=" * 30)
 
 
@@ -106,6 +103,7 @@ def store_should_add_posts(posts_instances, post_store):
 
 def store_should_get_members_with_posts(member_store, post_store):
     members_with_posts = member_store.get_members_with_posts(post_store.get_all())
+
     for member_with_posts in members_with_posts:
         print("{member_with_posts} has posts:")
         for post in member_with_posts.posts:
@@ -125,19 +123,12 @@ def store_should_get_top_two(member_store, post_store):
 members_instances = create_members()
 member1, member2, member3 = members_instances
 
-member_store = memberstore.MemberStore()
+member_store = MemberStore()
 
 store_should_add_member(members_instances, member_store)
 
+
 stores_should_be_similar()
-
-print_all_members(member_store)
-
-get_by_id_should_retrieve_same_object(member_store, member2)
-
-update_should_modify_object(member_store, member3)
-
-catch_exception_when_deleting()
 
 print_all_members(member_store)
 
@@ -156,7 +147,7 @@ store_should_get_members_by_name(member_store)
 posts_instances = create_posts(members_instances)
 post1, post2, post3, post4, post5, post6, post7, post8, post9 = posts_instances
 
-post_store = memberstore.MemberStore()
+post_store = PostStore()
 
 store_should_add_posts(posts_instances, post_store)
 
