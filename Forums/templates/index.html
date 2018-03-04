@@ -2,19 +2,31 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
     <title>Forums Workshop</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 
 <body>
 
-    <h3 align = "left"> Forum  </h3>
-    <h1  align = "center" >ONE MILLION ARAB CODERS</h1>
-    <p align = "center"><a href="#">MEMBERS </a> -- <a href="#"> Profile </a></p>
+    <div class="centered-item" align="center">
+        <h1>OneMillion</h1>
+    </div>
+
+    <div class="centered-item" align="center">
+        <a href="#">Members</a>
+
+        <a href="#">Profile</a>
+    </div>
+
+    <div class="content">
         <a href="#">Create</a>
 
-        <table width="100%" align="left">
-                <tr align="left" width="100%">
-                    <th align="left" width="33%">
+        <table>
+
+            <thead>
+                <tr>
+                    <th>
                         Title
                     </th>
 
@@ -26,52 +38,29 @@
                         Delete
                     </th>
                 </tr>
+            </thead>
+
+            <tbody>
+            {% for post in posts %}
+    <tr>
+        <td>
+            {{post.title}}
+        </td>
+
+        <td>
+            <a href="#">edit</a>
+        </td>
+
+        <td>
+            <a href="#">delete</a>
+        </td>
+    </tr>
+{% endfor %}
+            
+            </tbody>
         </table>
-        <table width="100%">
-            <tr align="left" width="100%">
-                <td align="left" width="33%">
-                    topic1
-                </td>
+    </div>
 
-                <td>
-                    <a href="#">edit</a>
-                </td>
-
-                <td>
-                    <a href="#">delete</a>
-                </td>
-            </tr>
-        </table>
-        <table width="100%">
-            <tr align="left" width="33%">
-                <td align="left" width="33%">
-                    topic2
-                </td>
-
-                <td>
-                    <a href="#">edit</a>
-                </td>
-
-                <td>
-                    <a href="#">delete</a>
-                </td>
-            </tr>
-        </table>
-        <table width="100%">
-            <tr>
-                <td align="left" width="33%">
-                    topic3
-                </td>
-
-                <td>
-                    <a href="#">edit</a>
-                </td>
-
-                <td>
-                    <a href="#">delete</a>
-                </td>
-            </tr>
-        </table>
 </body>
 
 </html>
