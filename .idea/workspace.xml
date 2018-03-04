@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33dda287-b124-41fb-b62a-701085b4e383" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Forums/app.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Forums/static/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Forums/dummy_data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Forums/templates/topic_add.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Forums/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Forums/app.py" afterPath="$PROJECT_DIR$/Forums/app.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Forums/templates/index.html" afterPath="$PROJECT_DIR$/Forums/templates/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -28,19 +30,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="atm.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/atm solution/atm.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="27" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1088">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Forums/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="34" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="510">
+            <state line="19" column="34" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0" vertical-offset="125" max-vertical-offset="510">
               <folding />
             </state>
           </provider>
@@ -67,9 +60,21 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Forums/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="52" selection-start="145" selection-end="145" vertical-scroll-proportion="0.28412256" vertical-offset="0" max-vertical-offset="969">
+            <state line="23" column="0" selection-start="440" selection-end="440" vertical-scroll-proportion="0.1977716" vertical-offset="320" max-vertical-offset="680">
               <folding>
                 <element signature="tag#thead#0;tag#table#0;tag#div#2;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#tbody#0;tag#table#0;tag#div#2;tag#body#0;tag#html#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Forums/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="13" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+              <folding>
+                <element signature="e#0#61#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,10 +83,8 @@
       <file leaf-file-name="app.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Forums/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="8" selection-start="401" selection-end="401" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
+            <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -91,19 +94,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Forums/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="60" selection-start="3161" selection-end="3183" vertical-scroll-proportion="0.0" vertical-offset="1655" max-vertical-offset="2754">
-              <folding>
-                <marker date="1519906460933" expanded="true" signature="501:572" placeholder="..." />
-                <marker date="1519906460933" expanded="true" signature="813:867" placeholder="..." />
-                <marker date="1519906460933" expanded="true" signature="1653:1823" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -132,8 +122,11 @@
         <option value="$PROJECT_DIR$/Forums/memberstore.py" />
         <option value="$PROJECT_DIR$/flask-demo/flask.py" />
         <option value="$PROJECT_DIR$/Forums/static/style.css" />
+        <option value="$PROJECT_DIR$/Forums/dummy_data.py" />
         <option value="$PROJECT_DIR$/Forums/app.py" />
+        <option value="$PROJECT_DIR$/Forums/templates/topic_add.html" />
         <option value="$PROJECT_DIR$/Forums/templates/index.html" />
+        <option value="$PROJECT_DIR$/Forums/views.py" />
       </list>
     </option>
   </component>
@@ -342,7 +335,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="makhlouf" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Forums/app.py" />
+      <option name="SCRIPT_NAME" value="C:\udacity\makhlouf\Forums\views.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -514,8 +507,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -525,7 +518,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -548,31 +541,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Forums/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="60" selection-start="3161" selection-end="3183" vertical-scroll-proportion="0.0" vertical-offset="1655" max-vertical-offset="2754">
-          <folding>
-            <marker date="1519906460933" expanded="true" signature="501:572" placeholder="..." />
-            <marker date="1519906460933" expanded="true" signature="813:867" placeholder="..." />
-            <marker date="1519906460933" expanded="true" signature="1653:1823" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atm solution/atm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="27" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1088">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Forums/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="34" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="459">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Forums/memberstore.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="20" selection-start="826" selection-end="826" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="748">
@@ -584,9 +552,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="58" column="0" selection-start="1439" selection-end="1439" vertical-scroll-proportion="0.0" vertical-offset="1179" max-vertical-offset="1564">
           <folding>
-            <marker date="1519906460933" expanded="true" signature="501:572" placeholder="..." />
-            <marker date="1519906460933" expanded="true" signature="813:867" placeholder="..." />
-            <marker date="1519906460933" expanded="true" signature="1653:1823" placeholder="..." />
+            <marker date="1519906460933" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1519906460933" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1519906460933" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -609,9 +577,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="5" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="306">
           <folding>
-            <marker date="1519906460933" expanded="true" signature="501:572" placeholder="..." />
-            <marker date="1519906460933" expanded="true" signature="813:867" placeholder="..." />
-            <marker date="1519906460933" expanded="true" signature="1653:1823" placeholder="..." />
+            <marker date="1519906460933" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1519906460933" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1519906460933" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -623,20 +591,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Forums/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="34" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Forums/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="104" column="60" selection-start="3161" selection-end="3183" vertical-scroll-proportion="0.0" vertical-offset="1655" max-vertical-offset="2754">
           <folding>
-            <marker date="1519906460933" expanded="true" signature="501:572" placeholder="..." />
-            <marker date="1519906460933" expanded="true" signature="813:867" placeholder="..." />
-            <marker date="1519906460933" expanded="true" signature="1653:1823" placeholder="..." />
+            <marker date="1519906460933" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1519906460933" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1519906460933" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -662,20 +623,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Forums/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="34" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Forums/dummy_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.5012987" vertical-offset="193" max-vertical-offset="578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Forums/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="8" selection-start="401" selection-end="401" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+        <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Forums/templates/topic_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="24" selection-start="230" selection-end="230" vertical-scroll-proportion="0.42618385" vertical-offset="0" max-vertical-offset="359">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Forums/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="13" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#61#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Forums/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="52" selection-start="145" selection-end="145" vertical-scroll-proportion="0.28412256" vertical-offset="0" max-vertical-offset="969">
+        <state line="23" column="0" selection-start="440" selection-end="440" vertical-scroll-proportion="0.1977716" vertical-offset="320" max-vertical-offset="680">
           <folding>
             <element signature="tag#thead#0;tag#table#0;tag#div#2;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tbody#0;tag#table#0;tag#div#2;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
